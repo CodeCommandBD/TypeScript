@@ -496,11 +496,33 @@
 // mod(500.15456521)
 
 
-// ####################### handle form input
+// ####################### handle form input type narrowing
+
+// function processInput(input: string | number) {
+//     if(typeof input === 'number'){
+//         console.log(input * 2);
+//     }else{
+//         console.log(input.trim());
+//     }
+// }
+
+// processInput('   more   ')
+// processInput(52)
+
+// #####################  typeof type guard
 
 
+// function display(value: string | number){
+//     if(typeof value === "string"){
+//         console.log(value.toUpperCase());
+        
+//     }else{
+//         console.log(value * 2);
+//     }
+// }
 
-
+// display(5)
+// display('more')
 
 
 
