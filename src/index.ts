@@ -525,5 +525,137 @@
 // display('more')
 
 
+// ################ in Operator type guard
+
+// type Car = {
+//     drive: () => void
+// }
+// type Boat = {
+//     sail: () => void
+// }
+
+// function move(vehicle: Car | Boat){
+//     if('drive' in vehicle){
+//        vehicle.drive()        
+//     }else{
+//         vehicle.sail()
+//     }
+// }
+
+// const car: Car = {
+//     drive: () => {
+//         console.log('car is driving....');
+//     }
+// } 
+
+// move(car)
+
+
+//  ###################### custom type guard
+
+
+// type  Fish = {
+//     swim: () => void;
+// }
+
+// type Bird={
+//     fly: () => void
+// }
+
+// function isFish(pet: Fish | Bird) : pet is Fish {
+//     return (pet as Fish).swim !== undefined
+// }
+
+// function move(pet: Fish | Bird) {
+//     if(isFish(pet)){
+//         pet.swim()
+//     }else{
+//         pet.fly()
+//     }
+// }
+
+// const myFish:Fish = {
+//     swim: () => console.log('my fish.......')
+    
+// }
+// move(myFish)
+
+
+// ########################### oop clss
+
+// define class 
+
+// class person {
+//     name: string;
+//     age: number;
+//     constructor(name:string, age:number){
+//         this.name = name;
+//         this.age = age
+//     }
+//     nill() {
+//         console.log('helo',this.name , this.age);
+//     }
+// }
+
+
+// // create object using person clss
+
+//     const user = new person('shanto',25)
+//     user.nill()
+
+//     const user2 = new person('kumar',20)
+//     user2.nill()
+
+
+
+// ############################ modifiers (public private protected)
+
+
+// public : access from anywhere
+
+//  private: only asscess from class
+
+// protected: only asscess from class and subClass
+
+
+
+// creat a bank clss 
+
+// class BankAccount {
+//    public owner: string;
+//    private balance: number;
+//    protected AccountType: string;
+//    constructor(name: string, balance: number){
+//     this.owner = name;
+//     this.balance = balance;
+//     this.AccountType = "savings"
+//    }
+
+//    public showBalnce(){
+//     console.log(this.balance);
+    
+//    }
+
+// }
+
+
+
+
+
+// const user = new BankAccount('shanto',25000)
+// console.log(user.owner);
+
+// user.showBalnce()
+
+// ###################################### inheritance 
+
+
+
+
+
+
+
+
+
 
 
