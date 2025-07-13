@@ -671,6 +671,21 @@
 // myDog.bark()
 
 
-// ################## implements keyword 
+// ################## implements keyword (for interface add)
 
+// interface Driver {
+//     start: ()=>void;
+//     stop: ()=>void;
+// }
 
+// class car implements Driver{
+//     start(){
+//         console.log('car is starting.....');
+//     }
+//     stop(){
+//         console.log('car is stop.....');
+//     }
+// }
+
+// const myCar = new car()
+// myCar.start()
