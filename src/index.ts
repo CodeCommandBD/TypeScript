@@ -650,12 +650,27 @@
 // ###################################### inheritance 
 
 
+// class Animal  {
+//     constructor(public name:string){
+//     }
+//     move(){
+//         console.log(this.name);    
+//     }
+// }
+
+// // Child Class or subClass
+// class Dog extends Animal{
+
+//     bark (){
+//         console.log('woof');
+//     }
+// }
+
+// const myDog = new Dog('tomy')
+// myDog.move()
+// myDog.bark()
 
 
-
-
-
-
-
+// ################## implements keyword 
 
 
